@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Exercise</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		.glyphicon {
+    		font-size: 24px;
+		}
+		section {
+		    margin-top: 50px;
+		}
+		#login {
+		    margin: 20px;
+		}
+		.btn {
+		    margin-top: 10px;
+		}
+
+		.wireframe{
+			width: 100%;
+			height: auto;
+		}
+
+		#main {
+			padding-bottom: 2em;
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">BRAND</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">ABOUT</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">LOGIN</a></li> <!-- Opens in Modal Window -->
+	        <li><a href="#">PROFILE</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	
+	<!-- End of navbar -->
+
+
+	<!-- Here's The Modal Window for your login. -->
+
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		      <form id="login">
+				  <div class="form-group">
+				    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+				    <input type="email" class="form-control" id="email" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label class="sr-only" for="exampleInputPassword3">Password</label>
+				    <input type="password" class="form-control" id="password" placeholder="Password">
+				  </div>
+				  <button type="submit" class="btn btn-default">Log in</button>
+				</form>
+		    </div>
+	  	</div>
+	</div>
+
+	<!-- Body of Page -->
+
+	<!-- It's container-fluid so it spans the whole page. -->
+	<div class="container-fluid">
+
+	<!-- Row for center text -->
+	<div class="row" id="main">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+		<p>Tempor cold-pressed stumptown, Tumblr authentic drinking vinegar cupidatat officia. Skateboard kitsch id deep v seitan sriracha fanny pack, umami four loko chillwave. Four dollar toast you probably haven't heard of them sed, Pinterest flannel deep v magna adipisicing anim. Quinoa bitters mixtape lomo put a bird on it. Banksy bitters pug kitsch, Helvetica mixtape four loko do. Thundercats sed Etsy eu, 8-bit id Echo Park. Tofu pug est incididunt master cleanse stumptown.</p>
+		</div>
+	</div>
+
+	<!-- End of centered main text. -->
+
+	<!-- Row for items to rate. -->			
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2">
+
+			<div class="sub-review">
+				<img class="wireframe" src="static/placeholder-image.png">
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+				<div>
+					<p>Tempor cold-pressed stumptown, Tumblr authentic drinking vinegar cupidatat officia. Skateboard kitsch id deep v seitan sriracha fanny pack, umami four loko chillwave. Four dollar toast you probably haven't heard of them sed, Pinterest flannel deep v magna adipisicing anim. Quinoa bitters mixtape lomo put a bird on it. Banksy bitters pug kitsch, Helvetica mixtape four loko do. Thundercats sed Etsy eu, 8-bit id Echo Park. Tofu pug est incididunt master cleanse stumptown.
+					</p>
+				</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+<!-- 			<div class="review"> -->
+				<div class="sub-review">
+					<img class="wireframe" src="static/placeholder-image.png">
+				</div>
+			<!-- </div> -->
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+				<div>
+					<p>Tempor cold-pressed stumptown, Tumblr authentic drinking vinegar cupidatat officia. Skateboard kitsch id deep v seitan sriracha fanny pack, umami four loko chillwave. Four dollar toast you probably haven't heard of them sed, Pinterest flannel deep v magna adipisicing anim. Quinoa bitters mixtape lomo put a bird on it. Banksy bitters pug kitsch, Helvetica mixtape four loko do. Thundercats sed Etsy eu, 8-bit id Echo Park. Tofu pug est incididunt master cleanse stumptown.
+					</p>
+				</div>
+		</div>
+
+
+			
+	</div>       
+
+	<!-- End of rated items row -->
+
+				
+    </div>
+
+
+<!-- You need this in order to use JS-based components.
+Leave this at the bottom and code above it. -->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
